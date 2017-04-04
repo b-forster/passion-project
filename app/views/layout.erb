@@ -19,7 +19,7 @@
       <% if logged_in? %>
         <span class="nav-links"><%= @current_user.username %></span> |
         <form action="/sessions" method="POST">
-          <input type="submit" value="Logout" class="link_button">
+          <input type="submit" value="Logout" class="link-button">
           <input type="hidden" name="_method" value="delete">
         </form>
       <% else %>
@@ -27,6 +27,7 @@
         <span><a href="/users/new" class="nav-links">Register</a></span>
       <% end %>
     </div>
+    
     <%= erb :'/_errors' %>
 
     <%= yield %>
