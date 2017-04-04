@@ -11,23 +11,23 @@
   </head>
 
   <body>
-      <div class="header">
-  <a href="/">
-    Karaoke Buddy
-  </a>
+    <div class="header">
+      <a href="/">
+        <h1>Karaoke Buddy</h1>
+      </a>
 
-  <% if logged_in? %>
-    <span class="nav-links"><%= @current_user.username %></span> |
-    <form action="/sessions" method="POST">
-      <input type="submit" value="Logout" class="link_button">
-      <input type="hidden" name="_method" value="delete">
-    </form>
-  <% else %>
-    <span><a href="/sessions/new" class="nav-links">Login</a></span> |
-    <span><a href="/users/new" class="nav-links">Register</a></span>
-  <% end %>
-</header>
-<%= erb :'/_errors' %>
+      <% if logged_in? %>
+        <span class="nav-links"><%= @current_user.username %></span> |
+        <form action="/sessions" method="POST">
+          <input type="submit" value="Logout" class="link_button">
+          <input type="hidden" name="_method" value="delete">
+        </form>
+      <% else %>
+        <span><a href="/sessions/new" class="nav-links">Login</a></span> |
+        <span><a href="/users/new" class="nav-links">Register</a></span>
+      <% end %>
+    </div>
+    <%= erb :'/_errors' %>
 
     <%= yield %>
 
