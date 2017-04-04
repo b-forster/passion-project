@@ -1,0 +1,7 @@
+<ul class="errors-container">
+  <% if @errors %>
+    <% @errors.each do |error| %>
+      <li class="error-item"><%= error %></li>
+    <% end %>
+  <% end %>
+</ul>

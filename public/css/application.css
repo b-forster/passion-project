@@ -1,0 +1,61 @@
+html {
+  width: 100%;
+  font-family: Helvetica;
+  color:silver;
+}
+
+h1{
+  font-weight: lighter;
+}
+
+.header{
+  background-color: #1A479E;
+}
+
+a {
+  color: #FFFFCC;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.nav-links, .nav-links:visited{
+  text-decoration: none;
+  color: #D8C1CA;
+  text-align: right;
+}
+
+
+.error-item{
+  color:red;
+  list-style-type: none;
+}
+form{
+  display: inline;
+}
+
+.link_button {
+  display: inline;
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+  color: #D8C1CA;
+  text-align: right;
+  font-size: 1em;
+  margin:0;
+}
+
+form, .form {
+  margin: 10px;
+  color:gray;
+}
+
+.header-img{
+  float:left;
+  margin: 10px;
+}
+
+li{
+  list-style-type: none;
+}
